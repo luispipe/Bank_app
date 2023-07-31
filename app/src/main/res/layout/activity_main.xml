@@ -29,11 +29,10 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/tvName"
                 style="@style/CustomText"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Vannesa Angelina" />
+                android:layout_height="wrap_content" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -55,6 +54,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="416dp"
         android:layout_height="407dp"
         android:orientation="vertical"
@@ -110,8 +110,8 @@
                     android:src="?android:attr/actionModeFindDrawable" />
 
                 <TextView
-                    style="@style/CustomTextDefault"
                     android:id="@+id/textView15"
+                    style="@style/CustomTextDefault"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Top up" />
@@ -131,8 +131,8 @@
                     android:src="?android:attr/actionModeFindDrawable" />
 
                 <TextView
-                    style="@style/CustomTextDefault"
                     android:id="@+id/textView12"
+                    style="@style/CustomTextDefault"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Top up" />
@@ -152,8 +152,8 @@
                     android:src="?android:attr/actionModeFindDrawable" />
 
                 <TextView
-                    style="@style/CustomTextDefault"
                     android:id="@+id/textView5"
+                    style="@style/CustomTextDefault"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Top up" />
@@ -173,8 +173,8 @@
                     android:src="?attr/actionModePasteDrawable" />
 
                 <TextView
-                    style="@style/CustomTextDefault"
                     android:id="@+id/textView6"
+                    style="@style/CustomTextDefault"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="TextView" />
@@ -182,4 +182,13 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.example.appbank.View.ui.fragments.OperationsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
